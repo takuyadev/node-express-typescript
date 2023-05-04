@@ -7,11 +7,11 @@ import hpp from "hpp";
 import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 
-// Import routes from the ./routes
-import user from "@/routes/user-route";
-
 // Setup .env variables for app usage
 dotenv.config();
+
+// Import routes from the ./routes
+import user from "@/routes/user-route";
 
 // Setup constant variables
 const PORT = process.env.PORT || 5000;

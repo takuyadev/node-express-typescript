@@ -2,7 +2,7 @@
   "name": "node-express-ts",
   "version": "1.0.0",
   "description": "Node.js + Express.js + TypeScript template project.",
-  "main": "index.js",
+  "main": "./src/app.ts",
   "scripts": {
     "status": "tsc --p tsconfig.json --listFiles",
     "test": "jest",
@@ -13,12 +13,12 @@
   "_moduleAliases": {
     "@/routes": "dist/routes",
     "@/data": "dist/data",
-    "@/middlewares": "dist/middlewares",
+    "@/middleware": "dist/middleware",
     "@/controllers": "dist/controllers",
     "@/db": "dist/db",
     "@/utils": "dist/utils"
   },
-  "author": "",
+  "author": "takuyadev",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
