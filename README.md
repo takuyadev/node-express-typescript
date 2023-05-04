@@ -1,5 +1,5 @@
 # node-express-typescript
-Basic starter project for any project using Node.js + Express.js + TypeScript.
+Basic starter project for any project using Node.js + Express.js + TypeScript. Personally, I'd recommend for small to medium projects, as the I'd imagine with a bigger project, you would need extra folders or structure. However, this template should be malleable enough for a good starting template for most personal projects.
 
 ## Features
 Most of the useful features are for easier configuration, although there are some other packages setup to make it easier for you to start your project without worrying about installing them.
