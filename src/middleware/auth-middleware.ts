@@ -1,13 +1,8 @@
-import { Request, Response, NextFunction, RequestHandler } from "express";
-import { ApiError } from "@/types/interfaces/interfaces.common";
-import { errorResponse } from "./error-middleware";
+import { NextFunction } from "connect";
+import { Request, Response } from "express";
 
-// @desc Handles async by resolving, and providing error handling to every request
+// @desc Authenticates user and protects routes
 
-export const asyncHandler = (fn: (req: Request, res: Response, next: NextFunction) => Promise<void>): RequestHandler => {
-    return (req: Request, res: Response, next: NextFunction) => {
-       Promise.resolve(fn(req, res, next)).catch((error: ApiError) => {
-          errorResponse(error, req, res, next)
-       });
-    };
- };
+export const verify = (req: Request, res: Response, next: NextFunction) => {
+  next();
+};

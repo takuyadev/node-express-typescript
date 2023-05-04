@@ -1,13 +1,14 @@
 import express from "express";
 
-// Import controllers from 
+// Import controllers from
 import { getUsers } from "@/controllers/user-controller";
+import { verify } from "@/middleware/auth-middleware";
 
 // Setup router
 const router = express.Router();
 
 // Setup all routes for user
-router.get("/", getUsers)
+router.get("/", verify, getUsers);
 
 // Export router; should always export as default
 export default router;
