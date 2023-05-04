@@ -1,6 +1,3 @@
-// Handle aliases when building application for production
-import "module-alias/register";
-
 // Import packages onto app
 import express from "express";
 import dotenv from "dotenv";

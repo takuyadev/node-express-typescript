@@ -6,7 +6,7 @@
   "scripts": {
     "status": "tsc --p tsconfig.json --listFiles",
     "test": "jest",
-    "start": "node ./dist/app.js",
+    "start": "node -r module-alias/register ./dist/app.js",
     "build": "tsc -p ./tsconfig.prod.json",
     "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node -r tsconfig-paths/register src/app.ts"
   },
