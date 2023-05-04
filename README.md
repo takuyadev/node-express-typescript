@@ -1,5 +1,5 @@
 # node-express-typescript
-Basic startup project for any project using Node.js + Express.js + TypeScript.
+Basic starter project for any project using Node.js + Express.js + TypeScript.
 
 ## Features
 Most of the useful features are for easier configuration, although there are some other packages setup to make it easier for you to start your project without worrying about installing them.
